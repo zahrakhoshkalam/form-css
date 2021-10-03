@@ -20,13 +20,24 @@
         <label for="email">Email:</label>
         <input id="email" type="email" placeholder="email" />
       </div>
-      <div>
-        <label for="number">number:</label>
-        <input id="number" type="number" />
-        <label for="password">password:</label>
-        <input id="password" type="password" />
-        <textarea name=" " cols="30" rows="10">Comment</textarea>
-      </div>
+      <label for="number">number:</label>
+      <input id="number" type="number" />
+      <label for="password">password:</label>
+      <input id="password" type="password" />
+      <input
+        type="text"
+        list="countries"
+        placeholder="Iran"
+        autocomplete="off"
+      />
+      <datalist id="countries">
+        <option data-value="1">Iran</option>
+        <option data-value="2">Afghanestan</option>
+        <option data-value="3">Pakestan</option>
+        <option data-value="4">Turkey</option>
+        <option data-value="5">Iraq</option>
+      </datalist>
+      <textarea name=" " cols="30" rows="10">Comment</textarea>
       <div>
         <button type="submit">Register</button>
         <button type="reset">Clear</button>
